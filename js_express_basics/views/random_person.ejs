@@ -1,0 +1,11 @@
+<%- include('./partials/header.ejs') %> 
+    <h1>Random Person</h1>
+    <% if(name) {%>
+        <h3><%= name %> </h3> 
+    <% } %> 
+    <form action="/random_person">
+        <label for="names">Enter a list of names</label>
+        <input type="text" name="names" >
+        <input type="submit" value="Submit">
+    </form>
+<%- include('./partials/footer.ejs') %> 

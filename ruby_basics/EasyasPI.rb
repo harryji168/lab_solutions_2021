@@ -1,0 +1,1 @@
+puts "1 degree equals to #{ Math::PI / 180} radian" 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="ui container">
+        <header>
+            <div class="ui secondary pointing menu navbar">
+                <a href="" class="item" data-target="product-index"> Products</a>
+                <a href="" class="item" data-target="product-new">New Product</a>
+                <a href="" class="item" data-target="product-show">Show Product</a>
+                <a href="" class="item" data-target="product-edit">Edit Product</a>
+            </div>
+        </header>
+        <div class="ui segment">
+
+            <section class="page" id="product-index">
+                <div class="ui header">Products</div>
+                <ul class="product-list"></ul>
+            </section>
+            <!-- <section class="page" id="product-new"></section> -->
+            <section class="page" id="product-show">
+                
+            </section>
+            <section class="page" id="product-new">
+                <div class="ui header">New Product</div>
+                <form class="ui form" id="new-product-form">
+                    <div class="field">
+                        <label for="title">Title</label> <input type="text" name="title" id="title"
+                            placeholder="Product Title" />
+                    </div>
+                    <div class="field">
+                        <label for="title">Price</label> <input type="text" name="price" id="price"
+                            placeholder="Product Price" />
+                    </div>
+                    <div class="field">
+                        <label for="description">Description</label> <textarea name="description" id="description" rows="10"
+                            placeholder="Product Description"></textarea>
+                    </div>
+                    <button class="ui button" type="submit">Create Product</button>
+                </form>
+            </section>
+            <section class="page" id="product-edit">
+                <div class="ui header">Edit Product</div>
+                <form class="ui form" id="edit-product-form">
+                    <div class="field">
+                        <label for="title">Title</label> <input type="text" name="title" id="title"
+                            placeholder="Product Title" />
+                    </div>
+                    <div class="field">
+                        <label for="title">Price</label> <input type="text" name="price" id="price"
+                            placeholder="Product Price" />
+                    </div>
+                    <div class="field">
+                        <label for="description">Description</label> <textarea name="description" id="description" rows="10"
+                            placeholder="Product Description"></textarea>
+                    </div>
+                    <input type="hidden" value="" name="id" /> <button class="ui button" type="submit">Update
+                        Product</button>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

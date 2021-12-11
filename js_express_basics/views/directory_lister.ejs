@@ -1,0 +1,21 @@
+<%- include('./partials/header') %>
+<h1>Directory Lister</h1>
+
+<% files.forEach((file, index) => {
+    let displayName = file;
+    if (file.split('.').length === 1) {
+        // We have a directory since it did not have an extension
+        displayName += "/"
+    }
+    if (index !== files.length - 1) { %>
+        <div>
+            ├── <%= displayName %>
+        </div>
+    <% } else { %>
+        <div>
+            └── <%= displayName %>
+        </div>
+    <% } %>
+<% }) %>
+
+<%- include('./partials/footer') %>

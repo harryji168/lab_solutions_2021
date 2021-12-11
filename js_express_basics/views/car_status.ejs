@@ -1,0 +1,11 @@
+<%- include('./partials/header.ejs') %> 
+    <h1>Car Status</h1>
+    <% if(type) {%>
+        <h3><%= type %> </h3> 
+    <% } %> 
+    <form action="/car_status">
+        <label for="year">Enter the year</label>
+        <input type="text" name="year" >
+        <input type="submit" value="Submit">
+    </form>
+<%- include('./partials/footer.ejs') %> 
